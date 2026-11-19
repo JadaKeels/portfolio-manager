@@ -1,22 +1,34 @@
 package com.pluralsight.finance;
 
-public class House {
+import java.math.BigDecimal;
 
-    public class House extends FixedAsset {
-        private int yearBuilt;
-        private int squareFeet;
-        private int bedrooms;
+public class House extends FixedAsset {
 
-        public House(String name, int yearBuilt, int squareFeet, int bedrooms) {
-            super(name);
-            this.yearBuilt = yearBuilt;
-            this.squareFeet = squareFeet;
-            this.bedrooms = bedrooms;
-        }
+    private int yearBuilt;
+    private int squareFeet;
+    private int bedrooms;
 
-        @Override
-        public BigDecimal getValue() {
-            return new BigDecimal("250000");
-        }
+    public House(String name, int yearBuilt, int squareFeet, int bedrooms) {
+        super(name);
+        this.yearBuilt = yearBuilt;
+        this.squareFeet = squareFeet;
+        this.bedrooms = bedrooms;
+    }
+
+    @Override
+    public BigDecimal getValue() {
+        return new BigDecimal("250000");
+    }
+
+    public int getYearBuilt() {
+        return yearBuilt;
+    }
+
+    public int getSquareFeet() {
+        return squareFeet;
+    }
+
+    public int getBedrooms() {
+        return bedrooms;
     }
 }
