@@ -2,7 +2,7 @@ package com.pluralsight.finance;
 
 import java.math.BigDecimal;
 
-public class CreditCard implements FinanceApplication {
+public class CreditCard implements Valuable {
 
     private String name;
     private String accountNumber;
@@ -20,22 +20,5 @@ public class CreditCard implements FinanceApplication {
 
     public void pay(BigDecimal amount) {
         balance = balance.subtract(amount);
-    }
-
-    @Override
-    public BigDecimal getValue() {
-        return balance.negate();
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getAccountNumber() {
-        return accountNumber;
-    }
-
-    public BigDecimal getBalance() {
-        return balance;
     }
 }
