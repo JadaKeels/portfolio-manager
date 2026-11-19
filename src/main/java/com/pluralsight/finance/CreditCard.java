@@ -1,13 +1,13 @@
 package com.pluralsight.finance;
 
-import com.pluralsight.FinanceApplication;
-
-public class CreditCard {
+import java.math.BigDecimal;
 
 public class CreditCard implements FinanceApplication {
+
     private String name;
     private String accountNumber;
     private BigDecimal balance;
+
     public CreditCard(String name, String accountNumber, BigDecimal balance) {
         this.name = name;
         this.accountNumber = accountNumber;
@@ -25,5 +25,17 @@ public class CreditCard implements FinanceApplication {
     @Override
     public BigDecimal getValue() {
         return balance.negate();
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getAccountNumber() {
+        return accountNumber;
+    }
+
+    public BigDecimal getBalance() {
+        return balance;
     }
 }

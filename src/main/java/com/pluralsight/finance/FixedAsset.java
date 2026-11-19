@@ -8,6 +8,7 @@ public class FixedAsset {
 
     public abstract class FixedAsset implements FinanceApplication {
         private String name;
+
         public FixedAsset(String name) {
             this.name = name;
         }
@@ -19,3 +20,4 @@ public class FixedAsset {
         @Override
         public abstract BigDecimal getValue();
     }
+}
