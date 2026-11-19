@@ -9,7 +9,6 @@ public class BankAccount implements Valuable {
     private BigDecimal balance;
 
     public BankAccount(int accountNumber, String owner, BigDecimal balance) {
-
         this.accountNumber = accountNumber;
         this.owner = owner;
         this.balance = balance;
