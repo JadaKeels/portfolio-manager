@@ -21,4 +21,21 @@ public class CreditCard implements Valuable {
     public void pay(BigDecimal amount) {
         balance = balance.subtract(amount);
     }
+
+    @Override
+    public BigDecimal getValue() {
+        return balance.negate();
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getAccountNumber() {
+        return accountNumber;
+    }
+
+    public BigDecimal getBalance() {
+        return balance;
+    }
 }
