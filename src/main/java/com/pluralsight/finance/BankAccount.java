@@ -1,10 +1,12 @@
 package com.pluralsight.finance;
 
+import com.pluralsight.FinanceApplication;
+
 import java.math.BigDecimal;
 
-public interface BankAccount {
+public class BankAccount {
 
-    public class BankAccount implements Valuable {
+    public class BankAccount implements FinanceApplication {
         private int accountNumber;
         private String owner;
         private BigDecimal balance;

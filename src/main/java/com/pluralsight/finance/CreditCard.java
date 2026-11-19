@@ -1,8 +1,10 @@
 package com.pluralsight.finance;
 
-public interface CreditCard {
+import com.pluralsight.FinanceApplication;
 
-public class CreditCard implements Valuable {
+public class CreditCard {
+
+public class CreditCard implements FinanceApplication {
     private String name;
     private String accountNumber;
     private BigDecimal balance;

@@ -1,6 +1,6 @@
-package com.pluralsight;
+package com.pluralsight.finance;
 
-public interface Gold {
+public class Gold {
 
     public class Gold extends FixedAsset {
         private double weight;

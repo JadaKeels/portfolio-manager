@@ -1,6 +1,6 @@
 package com.pluralsight.finance;
 
-public interface House {
+public class House {
 
 public class House extends FixedAsset {
     private int yearBuilt;
